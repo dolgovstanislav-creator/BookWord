@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorld | Catalog Cărți</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color: #FDFBF7;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #5D4037;">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="fa-solid fa-book-open me-2" style="color: #FF9800;"></i>
+                    <span style="font-weight: 700;">BookWorld</span>
+                </a>
+                <div class="collapse navbar-collapse" id="bookworldNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Noutăți</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reviews.html">Recenzii</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="term.html">Termeni și Condiții</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <h1 class="text-center fw-bold mb-5 pt-2" style="color: #2b1d16;">Catalog Total Cărți</h1>
+
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="p-4 bg-white border rounded shadow-sm">
+                    <h5 class="fw-bold mb-3" style="color: #5D4037; font-size: 0.9rem; letter-spacing: 1px;">FILTRE CATALOG</h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">Gen Literar</label>
+                        <select class="form-select" id="filterGenre" style="min-height: 44px;">
+                            <option value="all">Toate genurile</option>
+                            <option value="mister">Mister / Thriller</option>
+                            <option value="beletristica">Beletristică / Roman</option>
+                            <option value="dezvoltare">Dezvoltare Personală</option>
+                            <option value="istorie">Istorie</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-muted">Ordonează după Preț</label>
+                        <select class="form-select" id="sortPrice" style="min-height: 44px;">
+                            <option value="default">Implicit</option>
+                            <option value="asc">Preț crescător</option>
+                            <option value="desc">Preț descrescător</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="catalogGrid">
+                    
+                    <div class="col book-item" data-genre="mister" data-price="45.00">
+                        <div class="card h-100 border rounded shadow-sm p-3 text-center">
+                            <img src="/Stas/imagini/img9.jpg" class="card-img-top mx-auto" alt="Misterul Nopții" style="max-height: 180px; width: auto; object-fit: contain;">
+                            <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between mt-3">
+                                <div>
+                                    <h5 class="card-title h6 fw-bold mb-1">Misterul Nopții</h5>
+                                    <p class="text-muted small mb-1">Alexandru Dumas</p>
+                                    <p class="fw-bold mb-2" style="color: #5D4037;">45.00 RON</p>
+                                </div>
+                                <button class="btn btn-wishlist text-white w-100 fw-bold mt-2" data-id="book_1" data-title="Misterul Nopții" style="background-color: #5D4037; min-height: 40px;">
+                                    <i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col Red-item book-item" data-genre="mister" data-price="38.00">
+                        <div class="card h-100 border rounded shadow-sm p-3 text-center">
+                            <img src="/Stas/imagini/img13.jpg" class="card-img-top mx-auto" alt="Pasărea de Foc" style="max-height: 180px; width: auto; object-fit: contain;">
+                            <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between mt-3">
+                                <div>
+                                    <h5 class="card-title h6 fw-bold mb-1">Pasărea de Foc</h5>
+                                    <p class="text-muted small mb-1">Juliette Cross</p>
+                                    <p class="fw-bold mb-2" style="color: #5D4037;">38.00 RON</p>
+                                </div>
+                                <button class="btn btn-wishlist text-white w-100 fw-bold mt-2" data-id="book_2" data-title="Pasărea de Foc" style="background-color: #5D4037; min-height: 40px;">
+                                    <i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col book-item" data-genre="beletristica" data-price="55.00">
+                        <div class="card h-100 border rounded shadow-sm p-3 text-center">
+                            <img src="/Stas/imagini/img15.jpg" class="card-img-top mx-auto" alt="Cronicile Lumii" style="max-height: 180px; width: auto; object-fit: contain;">
+                            <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between mt-3">
+                                <div>
+                                    <h5 class="card-title h6 fw-bold mb-1">Cronicile Lumii</h5>
+                                    <p class="text-muted small mb-1">Lumina Pământului</p>
+                                    <p class="fw-bold mb-2" style="color: #5D4037;">55.00 RON</p>
+                                </div>
+                                <button class="btn btn-wishlist text-white w-100 fw-bold mt-2" data-id="book_3" data-title="Cronicile Lumii" style="background-color: #5D4037; min-height: 40px;">
+                                    <i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col book-item" data-genre="dezvoltare" data-price="29.00">
+                        <div class="card h-100 border rounded shadow-sm p-3 text-center">
+                            <img src="/Stas/imagini/img14.webp" class="card-img-top mx-auto" alt="Gândește Liber" style="max-height: 180px; width: auto; object-fit: contain;">
+                            <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between mt-3">
+                                <div>
+                                    <h5 class="card-title h6 fw-bold mb-1">Gândește Liber</h5>
+                                    <p class="text-muted small mb-1">Elena Radu</p>
+                                    <p class="fw-bold mb-2" style="color: #5D4037;">29.00 RON</p>
+                                </div>
+                                <button class="btn btn-wishlist text-white w-100 fw-bold mt-2" data-id="book_4" data-title="Gândește Liber" style="background-color: #5D4037; min-height: 40px;">
+                                    <i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col book-item" data-genre="beletristica" data-price="42.00">
+                        <div class="card h-100 border rounded shadow-sm p-3 text-center">
+                            <img src="/Stas/imagini/img7.jpg" class="card-img-top mx-auto" alt="Umbra Vântului" style="max-height: 180px; width: auto; object-fit: contain;">
+                            <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between mt-3">
+                                <div>
+                                    <h5 class="card-title h6 fw-bold mb-1">Umbra Vântului</h5>
+                                    <p class="text-muted small mb-1">Carlos Ruiz Zafón</p>
+                                    <p class="fw-bold mb-2" style="color: #5D4037;">42.00 RON</p>
+                                </div>
+                                <button class="btn btn-wishlist text-white w-100 fw-bold mt-2" data-id="book_5" data-title="Umbra Vântului" style="background-color: #5D4037; min-height: 40px;">
+                                    <i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col book-item" data-genre="istorie" data-price="60.00">
+                        <div class="card h-100 border rounded shadow-sm p-3 text-center">
+                            <img src="/Stas/imagini/img8.webp" class="card-img-top mx-auto" alt="Secretele Romei" style="max-height: 180px; width: auto; object-fit: contain;">
+                            <div class="card-body px-0 pb-0 d-flex flex-column justify-content-between mt-3">
+                                <div>
+                                    <h5 class="card-title h6 fw-bold mb-1">Secretele Romei</h5>
+                                    <p class="text-muted small mb-1">Alberto Angela</p>
+                                    <p class="fw-bold mb-2" style="color: #5D4037;">60.00 RON</p>
+                                </div>
+                                <button class="btn btn-wishlist text-white w-100 fw-bold mt-2" data-id="book_6" data-title="Secretele Romei" style="background-color: #5D4037; min-height: 40px;">
+                                    <i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 text-start" style="background-color: #0d0d0d; color: #b3b3b3; font-size: 14px; font-family: 'Lato', sans-serif;">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-3">
+                    <div class="d-flex align-items-center mb-3 text-white h5 fw-bold" style="font-family: 'Merriweather', serif;">
+                        <i class="fa-solid fa-book-open me-2" style="color: #FF9800;"></i> BookWorld
+                    </div>
+                    <p style="color: #a0a0a0; line-height: 1.6; margin: 0;">
+                        Suntem un centru dedicat pasiunii tale pentru lectură. Servim comunitatea de cititori cu servicii rapide, sigure și recomandări de lungă durată.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" style="color: #0088ff; letter-spacing: 0.5px; font-family: 'Merriweather', serif;">Hartă Site</h3>
+                    <ul class="list-unstyled lh-lg m-0 p-0">
+                        <li><a href="index.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Acasă</a></li>
+                        <li><a href="catalog.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Catalog</a></li>
+                        <li><a href="news.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Noutăți</a></li>
+                        <li><a href="reviews.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Recenzii</a></li>
+                        <li><a href="about.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Despre noi</a></li>
+                        <li><a href="contact.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Contact</a></li>
+                        <li><a href="term.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Termeni și Condiții</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" style="color: #0088ff; letter-spacing: 0.5px; font-family: 'Merriweather', serif;">Informații Centru</h3>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-map-marker-alt me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">Or. Cahul, Republica Moldova</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-phone-alt me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">+373 6X XX XX XX</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-envelope me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">suport@bookworld.md</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-clock me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">Luni - Vineri: 09:00 - 18:00</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" style="color: #0088ff; letter-spacing: 0.5px; font-family: 'Merriweather', serif;">Locația Noastră (Cahul)</h3>
+                    <div class="rounded overflow-hidden shadow-sm" style="max-width: 280px; height: 140px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44117.828590680695!2d28.16335195!3d45.9032483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65ca4df80a91f%3A0xc3f83769c0d10b7d!2sCahul!5e0!3m2!1sro!2smd!4v1710000000000!5m2!1sro!2smd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row pt-4 mt-4 border-top align-items-center" style="border-top: 1px solid #222 !important;">
+                <div class="col-12 col-sm-6 text-center text-sm-start text-muted" style="font-size: 13px;">
+                    © 2026 BookWorld. Toate drepturile rezervate.
+                </div>
+                <div class="col-12 col-sm-6 text-center text-sm-end fw-bold mt-2 mt-sm-0" style="color: #00cc44; font-size: 14px;">
+                    Proiect elaborat de Dolgov Stanislav - Grupa AAW 2331
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const filterGenre = document.getElementById("filterGenre");
+            const sortPrice = document.getElementById("sortPrice");
+            const catalogGrid = document.getElementById("catalogGrid");
+
+            function updateCatalog() {
+                if (!catalogGrid) return;
+                
+                let items = Array.from(catalogGrid.querySelectorAll(".book-item"));
+                const selectedGenre = filterGenre.value;
+                const selectedSort = sortPrice.value;
+
+                items.forEach(item => {
+                    const itemGenre = item.getAttribute("data-genre");
+                    if (selectedGenre === "all" || itemGenre === selectedGenre) {
+                        item.style.setProperty("display", "block", "important");
+                    } else {
+                        item.style.setProperty("display", "none", "important");
+                    }
+                });
+
+                if (selectedSort !== "default") {
+                    items.sort((a, b) => {
+                        const priceA = parseFloat(a.getAttribute("data-price"));
+                        const priceB = parseFloat(b.getAttribute("data-price"));
+                        return selectedSort === "asc" ? priceA - priceB : priceB - priceA;
+                    });
+
+                    items.forEach(item => catalogGrid.appendChild(item));
+                }
+            }
+
+            if (filterGenre && sortPrice) {
+                filterGenre.addEventListener("change", updateCatalog);
+                sortPrice.addEventListener("change", updateCatalog);
+            }
+
+            const wishlistButtons = document.querySelectorAll(".btn-wishlist");
+            let savedWishlist = JSON.parse(localStorage.getItem("bookworld_wishlist")) || [];
+
+            function updateButtonUI(button, id) {
+                if (savedWishlist.includes(id)) {
+                    button.style.backgroundColor = "#FF9800"; 
+                    button.innerHTML = '<i class="fa-solid fa-heart me-1"></i> În Wishlist';
+                } else {
+                    button.style.backgroundColor = "#5D4037"; 
+                    button.innerHTML = '<i class="fa-regular fa-heart me-1"></i> Adaugă în Wishlist';
+                }
+            }
+
+            wishlistButtons.forEach(btn => {
+                const bookId = btn.getAttribute("data-id");
+                updateButtonUI(btn, bookId);
+
+                btn.addEventListener("click", () => {
+                    const currentId = btn.getAttribute("data-id");
+                    const bookTitle = btn.getAttribute("data-title");
+
+                    if (savedWishlist.includes(currentId)) {
+                        savedWishlist = savedWishlist.filter(id => id !== currentId);
+                        alert(`„${bookTitle}” a fost eliminat din Wishlist.`);
+                    } else {
+                        savedWishlist.push(currentId);
+                        alert(`„${bookTitle}” a fost adăugat cu succes în Wishlist!`);
+                    }
+
+                    localStorage.setItem("bookworld_wishlist", JSON.stringify(savedWishlist));
+                    updateButtonUI(btn, currentId);
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

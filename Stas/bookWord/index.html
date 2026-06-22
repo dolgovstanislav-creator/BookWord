@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorld | Acasă</title>
+    <meta name="description"
+        content="Librăria ta online preferată. Descoperă mii de cărți recomandate, noutăți editoriale și recenzii ale cititorilor pasionați.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+            style="background-color: var(--primary-chocolate, #5D4037);">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="Logo" class="me-2" style="height: 30px; display: none;"
+                        onerror="this.style.display='none'">
+                    <i class="fa-solid fa-book-open me-2" style="color: #FF9800;"></i>
+                    <span style="font-weight: 700;">BookWorld</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bookworldNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="bookworldNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">Noutăți</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reviews.html">Recenzii</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="term.html">Termeni și Condiții</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 56px;">
+        <section class="text-white text-center d-flex align-items-center py-5"
+            style="background: linear-gradient(rgba(43, 27, 23, 0.85), rgba(26, 12, 8, 0.9)), url('img/hero/biblioteca.jpg') center/cover; min-height: 70vh;">
+            <div class="container py-4">
+                <h1 class="display-3 fw-bold mb-3">Tărâmul viselor tale literare!</h1>
+                <p class="lead mb-4 mx-auto style-italic" style="max-width: 750px; font-style: italic;">
+                    Alătură-te comunității noastre și explorează o bibliotecă de povești unice, special selectate pentru
+                    a inspira minți curioase.
+                </p>
+                <a href="catalog.html" class="btn btn-lg px-5 py-3 fw-bold text-white shadow"
+                    style="background-color: #FF9800; border: none;">Către Magazin</a>
+            </div>
+        </section>
+
+        <section class="py-5" style="background-color: #FDFBF7;">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5 position-relative pb-3">
+                    Cele mai bune alegeri ale noastre
+                    <span class="position-absolute bottom-0 start-50 translate-middle-x"
+                        style="width: 60px; height: 3px; background-color: #FF9800;"></span>
+                </h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center border-0 shadow-sm p-3 bg-white">
+                            <img src="/Stas/imagini/img1.jpg" alt="Jurnalul Annei Frank"
+                                class="img-fluid mx-auto mb-3 rounded" style="height: 240px; object-fit: cover;">
+                            <h3 class="h6 fw-bold text-truncate mb-1">Jurnalul Annei Frank</h3>
+                            <p class="small text-muted mb-0">Anne Frank</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center border-0 shadow-sm p-3 bg-white">
+                            <img src="/Stas/imagini/img2.jpg" alt="Fericirea incepe azi"
+                                class="img-fluid mx-auto mb-3 rounded" style="height: 240px; object-fit: cover;">
+                            <h3 class="h6 fw-bold text-truncate mb-1">Fericirea incepe azi</h3>
+                            <p class="small text-muted mb-0">Fericirea incepe azi</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center border-0 shadow-sm p-3 bg-white">
+                            <img src="/Stas/imagini/img3.jpg" alt="Suge-o, Ramona"
+                                class="img-fluid mx-auto mb-3 rounded" style="height: 240px; object-fit: cover;">
+                            <h3 class="h6 fw-bold text-truncate mb-1">Suge-o, Ramona</h3>
+                            <p class="small text-muted mb-0">Andrei Ciobanu</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center border-0 shadow-sm p-3 bg-white">
+                            <img src="/Stas/imagini/img4.jpg" alt="Tata bogat, tata sarac"
+                                class="img-fluid mx-auto mb-3 rounded" style="height: 240px; object-fit: cover;">
+                            <h3 class="h6 fw-bold text-truncate mb-1">Tata bogat, tata sarac</h3>
+                            <p class="small text-muted mb-0">Robert T. Kiyosaki</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 text-white" style="background-color: #5D4037;">
+            <div class="container text-center py-3">
+                <h2 class="fw-bold mb-4">Ce spun cititorii</h2>
+                <div id="homeTestimonials" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner mx-auto" style="max-width: 650px;">
+                        <div class="carousel-item active">
+                            <p class="fs-5 italic" style="font-style: italic;">"O platformă excelentă. Livrarea cărților
+                                fizice a fost extrem de rapidă!"</p>
+                            <h4 class="h6 text-warning fw-bold text-uppercase mt-2">- Andrei Popescu</h4>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="fs-5 italic" style="font-style: italic;">"Catalogul este foarte bine structurat,
+                                am găsit imediat recomandări bune de lectură."</p>
+                            <h4 class="h6 text-warning fw-bold text-uppercase mt-2">- Simona Ionescu</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 text-center" style="background-color: #F5EBE0;">
+            <div class="container">
+                <h2 class="fw-bold h4 mb-2">Fii la curent cu noutățile</h2>
+                <p class="text-muted mb-4">Abonează-te la newsletter pentru a primi oferte exclusive direct pe mail.</p>
+                <form class="d-flex flex-sm-row flex-column justify-content-center gap-2 mx-auto"
+                    style="max-width: 500px;">
+                    <input type="email" class="form-control" placeholder="Adresa ta de email" required
+                        style="min-height: 44px;">
+                    <button type="submit" class="btn text-white px-4 fw-bold"
+                        style="background-color: #FF9800; min-height: 44px;">Abonează-te</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 text-start" style="background-color: #0d0d0d; color: #b3b3b3; font-size: 14px; font-family: 'Lato', sans-serif;">
+        <div class="container">
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-3">
+                    <div class="d-flex align-items-center mb-3 text-white h5 fw-bold" style="font-family: 'Merriweather', serif;">
+                        <i class="fa-solid fa-book-open me-2" style="color: #FF9800;"></i> BookWorld
+                    </div>
+                    <p style="color: #a0a0a0; line-height: 1.6; margin: 0;">
+                        Suntem un centru dedicat pasiunii tale pentru lectură. Servim comunitatea de cititori cu servicii rapide, sigure și recomandări de lungă durată.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" style="color: #0088ff; letter-spacing: 0.5px; font-family: 'Merriweather', serif;">Hartă Site</h3>
+                    <ul class="list-unstyled lh-lg m-0 p-0">
+                        <li><a href="index.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Acasă</a></li>
+                        <li><a href="catalog.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Catalog</a></li>
+                        <li><a href="news.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Noutăți</a></li>
+                        <li><a href="reviews.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Recenzii</a></li>
+                        <li><a href="about.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Despre noi</a></li>
+                        <li><a href="contact.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Contact</a></li>
+                        <li><a href="term.html" class="text-decoration-none" style="color: #b3b3b3; transition: color 0.2s;" onmouseover="this.style.color='#0088ff'" onmouseout="this.style.color='#b3b3b3'">Termeni și Condiții</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" style="color: #0088ff; letter-spacing: 0.5px; font-family: 'Merriweather', serif;">Informații Centru</h3>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-map-marker-alt me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">Or. Cahul, Republica Moldova</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-phone-alt me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">+373 6X XX XX XX</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-envelope me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">suport@bookworld.md</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-clock me-2 mt-1" style="color: #00cc44; width: 16px; text-align: center;"></i>
+                        <span style="color: #b3b3b3;">Luni - Vineri: 09:00 - 18:00</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" style="color: #0088ff; letter-spacing: 0.5px; font-family: 'Merriweather', serif;">Locația Noastră (Cahul)</h3>
+                    <div class="rounded overflow-hidden shadow-sm" style="max-width: 280px; height: 140px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.2412852150393!2d28.1882658769399!3d45.90646190584592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65ca4a59bb667%3A0x6bda1fe610816999!2sCahul!5e0!3m2!1sro!2smd!4v1719047000000!5m2!1sro!2smd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row pt-4 mt-4 border-top align-items-center" style="border-color: #222 !important;">
+                <div class="col-12 col-sm-6 text-center text-sm-start text-muted" style="font-size: 13px;">
+                    © 2026 BookWorld. Toate drepturile rezervate.
+                </div>
+                <div class="col-12 col-sm-6 text-center text-sm-end fw-bold mt-2 mt-sm-0" style="color: #00cc44; font-size: 14px;">
+                    Proiect elaborat de Dolgov Stanislav - Grupa AAW 2331
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop"
+        style="position: fixed; bottom: 20px; right: 20px; display: none; background: #FF9800; color: white; border: none; border-radius: 50%; width: 44px; height: 44px;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+    --primary-chocolate: #5D4037;   
+    --accent-orange: #FF9800;       
+    --bg-cream: #FDFBF7;            
+    --bg-cream-dark: #F5EBE0;       
+    --text-dark: #231815;
+    
+    --font-titles: 'Merriweather', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: var(--font-titles);
+}
+
+.nav-link, .btn, .form-select, .form-control, #backToTop, .accordion-button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn {
+    justify-content: center;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-orange) !important;
+}
+
+.book-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(93, 64, 55, 0.1) !important;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(93, 64, 55, 0.15) !important;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    z-index: 1050;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background-color: var(--primary-chocolate);
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   STILURI SUBSOL (FOOTER) - CONFORM IMAGINII DE REFERINȚĂ
+   ========================================================================== */
+.custom-footer {
+    background-color: #0d0d0d;
+    color: #b3b3b3;
+    padding: 50px 20px 20px 20px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 240px;
+}
+
+/* Coloana 1: Brand/Logo */
+.footer-logo {
+    color: #ffffff;
+    font-family: var(--font-titles);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo i {
+    color: var(--accent-orange);
+}
+
+.footer-column p {
+    line-height: 1.6;
+    color: #a0a0a0;
+}
+
+/* Titluri Coloane */
+.footer-column h3 {
+    color: #0088ff; /* Albastru aprins ca în imaginea de referință */
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Liste de link-uri (Hartă Site) */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #0088ff;
+}
+
+/* Informații Centru (Contact) */
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    gap: 12px;
+}
+
+.footer-contact-item i {
+    color: #00cc44; /* Verdele exact din imagine pentru iconițe */
+    margin-top: 3px;
+    width: 16px;
+    text-align: center;
+}
+
+/* Locație (Hartă Google) */
+.footer-map-box iframe {
+    width: 100%;
+    max-width: 280px;
+    height: 140px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Bara de Jos (Copyright & Autor) */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-copy {
+    color: #777;
+}
+
+.footer-author {
+    color: #00cc44; /* Verdele pentru numele autorului proictului */
+    font-weight: bold;
+}
